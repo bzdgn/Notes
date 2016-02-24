@@ -86,3 +86,79 @@
 + Observer pattern when I need a subscriber-publisher relationship between the classes. Factory pattern for 
   creating instances, also builder. Mostly I've used creational design patterns (I want to cry and burn my CV)
   
+#SQL
+****
+- What is the having clause in SQL?
++ A classic example of when to use this would be, if you wanted to create a query to list all customers in their
+  order count for all customers that have an order count greater than 3.
++ http://www.w3schools.com/sql/sql_having.asp
+
+- What is normalization and denormalization?
++ Normalization is where we try to eliminate duplication of data and dependency. A good example of this would be
+  taking the mailing address and pysical address fields out of the table and replacing them with a reference to
+  an address table. So that when a customer has the same mailing and physical address, it can refer to one row
+  in the address table and not have to duplicate the data.
+  
+  Denormalization is just the opposite. When we denormalize the database, we're usually trying to increase the
+  performance by duplicating some data or storing it together. A good example of this would be taking the customer
+  name and shipping address and putting it into the orders table. Even though we could just reference the customer
+  table and address table. By denormalizing the data, we don't have to do any joins when processing the orders.
+  
+- What are the difference types of joins in SQL?
++ The two big ones here are inner and outer joins. And usually, you get bonus points for naming some others.
+  The inner join is just a join where we're taking two tables and getting a result of rows that match the join
+  predicate from both tables.
+  
+  The join predicate is just a clause used to oin tables together, usually a column from one table matching a
+  column from another table. And outer join is a join where one or both of the tables will include all rows,
+  even if the join predicate is not satisfied.
+  
+  If we have a left outer join, the table on the left hand side will always have a row in the result that
+  for each row it contains, even if there is no match in the right table. The right tables columsn will just
+  be null.
+  
+  The right outer join is just the opposite and the full outer join means that both sies will contain all rows.
+  
+  The other type of join is cross join,which is just a partition product of the rows from the tables and the
+  join. This means that the result set will contain a row for each combination of every row in the first
+  table and every row in the second table.
+  
+  There are other types of joins but these are the most common that are usually expected as an answer to this
+  question.
+
+#Personal
+*********
+- Why are you looking for other opportunities?
++ There are several variations of this question but usually, the interviewer is trying to get an idea of
+  under what circumstances you might be leaving your current job, so they can know what to expect if they
+  hire you. It makes when you think about it but many cancidates don't think about it and say how bad
+  their current job is or current boss is. You don't ever want to talk unfavorably about your current
+  employer to your perspective employer. Most companies don't want to hire someone that they feel is not
+  going to stick around enough to pay for the investment of training them and bringing them on board.
+  They want to return on their money.
+  
+  A good way to answer to this question is to talk about things that attracted you specifically to this
+  job or company and to mention that you don't have any problems with your current position or team. (lies,
+  lies, lies, it's more like to talk about your ex-girlfriend while getting a date, dont be a retro-scumbag)
+  
+- What are your strengths? What are your weaknesses?
++ It's very hard to answer those questions because it is easy to come off arrogant. And if you don't have
+  a good answer here, you may be selling yourself short. I found that a good way to approach this question
+  is to try to be confident and have a realistic view of yourself but not ot make it seem like you have
+  something to prove or that you're bragging. It's definitely a delicate balance but it's worth thinking
+  about this ahead of time.
+  
+  You can usually anticipate that when someone asked, what are your strengths, that the next question
+  is going to be: what are your weaknesses? So you can actually set up a good answer to both of these
+  questions.  So you can actually set up a good answer to both of these questions by knowing that
+  many attributes of a person can be seen as a strength or weakness, depending on the situations.
+
+  Let's say that you are a perfectionist. This could either be a strenght or weakness, depending on the
+  situation. If you are trying to deliver the highest quality product possible. This perfectionism can be
+  called attention to detail. The same attribute can be mentioned in the question about weaknesses by
+  saying that your attention to detail, because it helps you make sure you check your work and don't do
+  things sloppily can be a weakness as well because you tend to be a perfectionist and sometimes will spend
+  extra time on something that is already more than good enough. Just don't make the mistake of listing some
+  major character flaw as your weakness, making that your win points for being completely transparent.
+
+- Give an example of a time you had a disagreement with a coworker and how it was resolved.
