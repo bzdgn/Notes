@@ -15,8 +15,14 @@
   object itself can be changed.
 
 - What is the difference between an interface and an abstract class?
-+ 
-
++ Question can be asked both on C# and Java or any OOP Class-based language. The biggest difference
+  is that abstract base class can have instance methods, which allows you to have a default behaviour,
+  while an interface can declare constants in interface methods, but it can provide and implementation
+  for those methods.
++ Abstract class, like a regular class, can hav fields and methods as well such as private, protected
+  members.
++ Abstract Class can be preferred when you want a default implementation for all subclasses.
+  
 # C#
 ****
 - What are all classes in C# derived from?
@@ -39,3 +45,44 @@
   implemented in C# in such a way that the genericness is preserved all the way to the bytecode that is
   generated.
 + Implementation differences of the generics in C#, Java and C++.
+
+# OOP
+*****
+- What is encapsulation?
++ Data hiding, restricting access to data.
++ Encapsulation let classes to be loosely coupled and with encapsulation, data is exposed only when you
+  want to share it with other classes.
++ With encapsulation, the operation implementations can be hide on the same place where data exists. Thus,
+  the modification or any operation that applies to data is hided.
++ The hided implementation and the data itself located under the same class, it is also known as cohesion.
+
+- What is polymorphism?
++ Polymorphism is the structure that when classes have different functionality, while sharing the same interface. 
++ http://simpleprogrammer.com/2013/01/13/so-you-think-you-can-polymorph/
++ Polymorphism is the ability for classes to behave different for a functionality for the same interface. With
+  polymorphism, implementations of the same interface used by different classes are hided, and thus used without
+  need of the implementation details.
+
+- What is composition?
++ When an object is made up of other types. A composition class is a mixture of other class instances. 
++ A simple example is, a class that have other class instances in its fields is a composition class, and the
+  composition class has 'has a' relationship with the other classes which it is made of. 
++ The difference between the composition and the inheritance based on the relationship of the classes. Composition
+  class has a 'has a' relation ship while the inheritace class has a 'is a' relationship.
+
+- What is a design pattern?
++ A design pattern is a solution to a common software problem that generally occurs in differen situations in
+  software development. It is more of a template for solving a problem, rather than a specific implementation.
++ The idea behind the design pattern is to give a common vocabulary, that can communicate a large amount of
+  information with a few words about software designs.
++ With the design patterns, software developers have a list of solution template specific for a problem space.
+
+- What is a singleton pattern?
++ The purpose of singleton pattern is restricting the instantiation of a class to a single instance, thus
+  there can only one instance of a singleton class in the system (JVM).
++ The unnecessary and incorrect use of singleton pattern can also be considered as an anti-pattern.
+
+- What are some design patterns you have used?
++ Observer pattern when I need a subscriber-publisher relationship between the classes. Factory pattern for 
+  creating instances, also builder. Mostly I've used creational design patterns (I want to cry and burn my CV)
+  
