@@ -1,0 +1,119 @@
+Machine Learning;
+*****************
+- Find patterns in data
+- Uses the patterns to predict the future
+
+Example;
+********
+- Detecting credit card fraud
+- Determining whheter a customer is likely to switch to a competitor
+- Deciding when to do preventive maintenance on a factory robot
+	- Find patterns to predict when the robot is going to fail
+	
+Learning;
+*********
+Ex: How did you learn to read?
+
+Learning requires;
+	- Identifying patterns (letters, words,...)
+	- Recognizing those patterns when you see them again
+	
+Ex: Analyze the data below and find an abstract pattern;
+	Name	Amount	Fraudulent
+	Smith	$2600	No
+	Potter	$2300	Yes
+	Peters	$1000	Yes
+	Adams	$8400	No
+	
+	What is the pattern for Fraudulent transactions?
+	- If the name starting with 'p', they are criminal (Silly)
+	- If the ammount lower then 2400 (or a limit), then should be criminal?
+	
+	Data is very low, and with low parameter and low data, finding pattern is more easy but useless.
+	
+	If the data parameters and data values are too much, then it's hard to find a pattern for a human
+	but for a computer, it will be more easy and the pattern will probably more useful. That's machine learning.
+	
+	
+Machine Learning in a Nutshell;
+*******************************
+- Start with a data that contains patterns
+- Use a Machine Learning Algorithm that finds patterns in the data
+- Algorithm generates a Model. Functionality is recognizing patterns when feed with new data
+- Applications will supply new data to see if it matches with known patterns
+
+Data ==> Machine Learning Algorithm ==> Model <==> Application
+
+- Algo finds patterns
+- Model is generated
+- Application sends new data, model recognizes patterns
+
+1) Banking transactions occur, these are data
+2) Algo finds 3 different fraud pattern in the data
+3) Model generated based on 3 patterns
+4) With new data, frauds based on three patterns found!
+
+Why is machine learning so hot now?
+***********************************
+	Machine Learning requires;
+		
+	Lots of data (we are in the big data era)
+	Lots of compute power (we are in the cloud era)
+	Effective machine learning algorithms (already studied enough for years and still hot)
+	
+Machine Larning;
+****************
+Machine learnig lets us find patterns in existing data, then create and use a model that recognizes 
+those patterns in new data.
+
+Machine learning has gone mainstream;
+	- Big vendors think there's big money in this market
+
+Machine learning can probably help your organization
+
+The First Problem: Asing the Right Question;
+********************************************
+	- Choosing what question to ask is the most important part of the process
+	- Ask yourself: Do you have the right data to answer this question?
+	- Ask yourself: Do you know how you'll measure success?
+
+Machine Learning Process;
+*************************
+    
+	----------------------------------------------------- ITERATE WHOLE JOB TO UPDATE MODEL REGULARLY  ----------------------------------------------------------------------------
+                                                                                                       (Multiple Algorithms)
+	Raw Data -> [Data Preprocessing Modules] Apply preprocessing to data -> Prepared Data -> Apply Learning Algo to Data -> Candidate Model -> Deploy Chosen Model -> Choosen Model -> Applications
+				***************** ITERATE HERE TO REFINE DATA ***************************    ******* Iterate to find the best model *******
+	----------------------------------------------------- ITERATE WHOLE JOB TO UPDATE MODEL REGULARLY  ----------------------------------------------------------------------------				
+.
+
+
+
+Cateogrizing Machine Learning Problems;
+***************************************
+	- Regression		supervised,		data labeled
+	- Classification	supervised,		data labeled
+	- Clustering		Unsupervised,	data NOT labeled
+
+
+
+Style of Machine Learning Examples;
+***********************************
+	- Decision Tre
+	- Neural Network
+	- Bayesian
+	- K-means (for clustering?)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
