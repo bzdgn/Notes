@@ -1,0 +1,41 @@
+# Java
+******
+- How does the same Java coe run on multiple operating systems?
++ The output of the compilation of Java code generates bytecode and JVM interprets bytecode. Because
+  JVM has implementations form many different operating systems the bytecode is transformed into the
+  different implementations which is going to be used specific to that system.
+  
+- What does the final keyword do?
++ final makes a class unable to be a subclass. final prevents subclassing.
++ final prevents a method to be overwritten, and makes a variable assignable only for once.
++ In general, final prevents update of the class fields and methods and prevents subclassing.
++ final variable values are no known at compile time, and this differs it from the constant.
++ final does not mean a variable is completely immutable. If a final modifier is put in front of the
+  reference type, the object that variable refers to cannot be changed, but the properties of that
+  object itself can be changed.
+
+- What is the difference between an interface and an abstract class?
++ 
+
+# C#
+****
+- What are all classes in C# derived from?
++ object (equals, toString,...)
+
+- What is a delegate?
++ Delegate in C# is a special type that defines a method signature. An instance of a delegate type can be
+  assigned to any method with a compatible signature, and the assigned method can be called through the
+  delegate instance.
++ Function Pointers in C, (but typesafe?), delegates vs. Java (subscriber model), Design Patterns(Observer)
++ Delegates passed methods as parameters, some .NET classes using delegate easier like action.
+
+- Describe how generics work in C#.
++ Think about what generics do and how they're implemented in C#.
++ Generics are actually a type of polymorhpism called parametric polymorphism (don't mention this keyword!)
++ Generics allow you to write a class or method that does not specify the exact type for one or more its
+  parameters, until the class or method is used(runtime). Classic examples like a list or a stack are good
+  to use here to further show your knowledge of the subject.
++ It is a god idea to talk about how generics allow code reuse, while preserving typesafety. Generics are
+  implemented in C# in such a way that the genericness is preserved all the way to the bytecode that is
+  generated.
++ Implementation differences of the generics in C#, Java and C++.
