@@ -311,3 +311,56 @@
 +	Use 2 stacks
 	1 to hold queued items
 	1 to dispense de-queued items
+	
+# Sorting
+- Basic Sort Algos
+	Bubble Sort			Elements "bubble" to front and back
+	Selection Sort		Find the next smallest or highest and put it in place
+	Merge Sort			Break items into lists of 1, merge them back together sorted
+	Quick Sort			Select pivot, move items smaller than pivot to left, move items larger to right. Repeat until sorted.
+	
++	Bubble Sort			The basic and the worst performance
+	Selection Sort		Easy algo but not very performant for a large list
+						Divide the list into 2 list, sorted and unsorted. You keep the oundary between 2 sublist and
+						keep track of the index which points the border.
+	Merge Sort			Divide and conquer algo, divide whole list into sublist of one element then merge step by step to whole.
+	Quick Sort			Good performance, another divide and conquer algo.
+	
+- How do you sort a tree (that hurts!)
+
+# Searching
+- Find Element In List
+	Linear Search
+	Binary Search
+- Tree Search
+	Sorted Binary Tree
+	Unsorted Tree
+		Same as tree traversal
+		
+# Binary Search
+- Like NumberGuessGame but for a sorted list
+
+# Concurrency
+- Def: Several things happening in the same time period.
+
+# Lock
+- A lock is simply some way of preventing multiple threads from accessing a piece of data or other resource. It is used to prevent
+  issues in concurrent applications or multiple threads of execution are manipulating the same data and possibly causing corruption
+  of that data.
+- A common question is something along the lines of, what is the reason for using a lock?
++ The answer is that you want to prevent one thread from accessing a piece of data or resource while another thread is accessing that
+  data. A common example is incrementing a value. If threads have to first read the value then add one to the value and then store
+  back that value, you can have a problem if multiple threads read the value before a thread updates a value.
+
+# Deadlock
+- Personal Note: Let me explain a real world (not actually real) example for a deadlock situation from the crime movies. Imagine
+  a criminal holds an hostage and against that, a cop also holds an hostage who is the friend of the criminal. In this case,
+  criminal is not going to let the hostage go if cop wont let his friend to let go. Also the cop is not going to let the friend
+  of criminal let go, unless the criminal releases the hostage. This is an endless unthrustworthy situation, because both sides
+  are insisting the first step from each other.
+- When two threads (or N threads) need to acquire a lock and has the lock where the other thread need to acquire the lock. None
+  of them is going to release the resources unless they are going to acquire the lock of the resource they need, that's a deadlock.
+
+# Race Condition
+- Race conditions happen when the behaviour of a system is indeterminant because it depends on the timing of thread execution in order
+  which could change from run to run.
