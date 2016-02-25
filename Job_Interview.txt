@@ -162,3 +162,152 @@
   major character flaw as your weakness, making that your win points for being completely transparent.
 
 - Give an example of a time you had a disagreement with a coworker and how it was resolved.
+
+# Big O Notation
+****************
+- What is Big O Notation?
++ The idea behind Big O notation is just that it is a way to describe how efficient a particular algorithm
+  or operation is in terms of usually either time, that is how long it takes to execute or space that is how
+  much memory it takes up. (mostly time is considere, check net for space analysis!)
+  
++ When we describe algorithm in Big O notation, we only care about the part of the algorithm that grows the
+  most as we increase the size of the data we're operating on. For example, supposed we have an algorithm that
+  takes one second to complete when we have an input size of one. And another algorithm that takes five
+  seconds to complete when it has an input size of one. If we scale this up and find that with an input
+  size of five, the first algorithm takes five seconds and the second algorithm takes 25 seconds, we can
+  see that both algorithms are actually scaling at the same rate.
+  
+  Algo A -> input size = 1 : duration = 1  ms
+  Algo B -> input size = 1 : suration = 5  ms
+  
+  Algo A -> input size = 5 : duration = 5  ms
+  Algo B -> input size = 5 : duration = 25 ms
+  
+  For whatever the input is, the time for each algorithm to complete is a constant times that input. In
+  Big O notation, we'd write both algorithms as O of N, also known as "linear progression".
+  
+  O(1*N) and O(5*N)
+  O(N) -> Linear progression
+  
+  We can quickly make an assessment about many simple algorithms just by looking at the code. The idea here
+  is to look forwhat part of the code will grow the most ( a.n^3 + b.n^2 + c.n, then ~n^3 is considered)
+  with an increase in the data it operates on. For example, if we use a loop, then the time should grow
+  directly proportional to the size of the data.
+  
+  If we used a loop within a loop, a nested loop, then the time should grow at a rate of the square of the
+  data size. This is known as "quadratic progression".
+  
+  Common Big O's
+  **************
+  O factor				Progression
+  O(1)					Constant
+  O(log N)				Logarithmic
+  O(N)					Linear
+  O(N^2)				Quadratic
+  O(C^N)				Exponential
+  
+  [Fastest]   O(1) > O(log N) > O(N) > O(N^2) > O(N^3)   [Slowest]
+  
+#Bit Manipulation
+****************
+- How do you convert a base 10 number to binary?
+- How many 0s or 1s is in a binary number?
+- Reverse a number using binary operations.
+- Add two numbers using only binary operations.
+
+#Bit Conversion
+**************
+- Find the highest power of two less than N.
+- Subtract found power of 2 from N, and write down a 1.
+	- (N should now be equal to N - the power of 2 found)
+- Find next lowest power of 2 that fits in N.
+- Fill in 0s for each power of 2 that didn't fit.
+- Subtract found power of 2 from N, and write down a 1.
+- Repeat steps 3-5 until out of powers of 2.
+
+- Convert 161 to binary
++ 161 - 128 (2^7) = 33			1
++ 33 - 64 XXX					10
++ 33 - 32 (2^5) = 1				101
++ 1 - 16 = XXX					1010
++ 1 -  8 = XXX					10100
++ 1 -  4 = XXX					101000
++ 1 -  2 = XXX					1010000
++ 1 -  1 = 0					10100001  ==> 1010 0001
+
+#Bitwise Operators
+******************
+- Not, And, Or, Xor
+- Xor;
+  0 xor 0 = 0
+  0 xor 1 = 1
+  1 xor 0 = 1
+  1 xor 1 = 0
+  
+- Bit Shifting;
+  Move bits to left  : Multiply by 2
+  Move bits to right : Divide by 2
+  
+#Bit Problem
+************
+- How many binary 1s in a number?
++ Brute force
+    Convert binary to string
+	Loop trhough string counting 1s
++ Better way
+	AND N with 1
+	If results is 1, increment count
+	Bitshift right by 1 (dont need rightmost bit anymore)
+	Repeat until N = 0
++ Best way
+	While N! = 0
+	Set N = ( N AND N-1)		( N-1 a usefule filter )
+	Increment count
+  
+# Arrays
+********
+- Arrays are fixed in size so neither can shrink nor can grow.
+- Sample questions;
+	- Reverse an array in place
+	- Shift an array's elements one place to the left
+	- Find all pairs in an array that add up to X
+	- Remove all duplicate values from an array
+- Why arrays are preferred?
+
+# Linked Lists
+- Linked Lists are fast at inserts and removal, but sow at getting in that element
+  However arrays are better on retrieving the element but bad on inserting deleting because they are fixed
+  thus neither can shrink, nor can grow so another fixed size array should be used which is a very bad idea.
+  
+# Tree
+- Tree traversal problems (breath first, depth first)
++ Depth first,
+	Start from the node, go left then go right child
+	Go left, and then rigth again
+	Repeat
++ Breath first
+
+- General Questions
+	Searching
+	Creating a Tree
+	Find Depth
+	Find Number of Elements
+	
+# Stack
+- LIFO (Last in First out)
+- Operations
+	Top		first item
+	Push	add an item
+	Pop		remove an item
+	Peek	Look at first item but not remove it
+	
+# Queue
+- FIFO (first in first out)
+- Operations
+	Enqueue	add an item
+	Dequeue remove an item
+	Peek	look at the first item
+- Build a Queue from Stacks
++	Use 2 stacks
+	1 to hold queued items
+	1 to dispense de-queued items
